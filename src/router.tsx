@@ -33,6 +33,10 @@ const router = createBrowserRouter([
     element: <MainLayout><ArticlesManagementPage /></MainLayout>,
   },
   {
+    path: "/wp-admin",
+    element: <MainLayout><ArticlesManagementPage /></MainLayout>,
+  },
+  {
     path: "/new-articles",
     element: <MainLayout><WriteArticlesPage /></MainLayout>,
   },
@@ -50,6 +54,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/tin-tuc",
+    element: <MainLayout><ArticlesListPage /></MainLayout>,
+  },
+  {
+    path: "/tim-kiem",
     element: <MainLayout><ArticlesSearchResultPage /></MainLayout>,
   },
   {

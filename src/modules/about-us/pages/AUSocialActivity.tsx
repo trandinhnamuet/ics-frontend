@@ -1,7 +1,7 @@
 import { Typography } from "antd";
 import SideIntro from "../components/SideIntro";
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph   } = Typography;
 
 export default function AUSocialActivity() {
   return (

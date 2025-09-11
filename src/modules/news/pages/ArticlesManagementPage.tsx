@@ -47,7 +47,7 @@ export default function ArticlesManagementPage() {
       title: "Tiêu đề",
       dataIndex: "title",
       key: "title",
-      render: (text: string, record: any) => (
+      render: (text: string) => (
         <Typography.Text strong>{text}</Typography.Text>
       ),
     },

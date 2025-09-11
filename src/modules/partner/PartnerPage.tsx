@@ -1,7 +1,7 @@
 import { Typography } from "antd";
 import SideIntro from "../about-us/components/SideIntro";
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 export default function PartnerPage() {
   return (

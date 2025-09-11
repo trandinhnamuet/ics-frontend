@@ -3,11 +3,10 @@ import React, { useEffect, useState } from "react";
 import { Card, Typography, Row, Col, Alert, Button, Spin, Progress } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 // VNPAY config
 const vnp_TmnCode = "2N7YHXIZ";
-const vnp_HashSecret = "OV22KRXMF12MAO3QWH6O6BXAU7JTTZ22";
 const vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 
 function formatCurrency(n: number) {
@@ -37,7 +36,6 @@ const OracleCloudPaymentPage = () => {
 	const navigate = useNavigate();
 	const { packageInfo, quantity, months, total } = location.state || {};
 	const [status, setStatus] = useState<'pending'|'success'|'fail'>("pending");
-	const [checking, setChecking] = useState(false);
 
 	// Fake orderId for demo
 	const orderId = React.useMemo(() => `ICS${Date.now()}`, []);

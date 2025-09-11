@@ -1,7 +1,7 @@
 import { Typography } from "antd";
 import SolutionSideBar from "../components/SolutionSideBar";
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 export default function AiSocPage() {
 	return (

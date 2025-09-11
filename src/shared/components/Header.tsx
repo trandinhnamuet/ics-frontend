@@ -47,9 +47,9 @@ const Header: React.FC = () => {
 
   const handleSearch = () => {
     if (searchText.trim()) {
-      navigate(`/tin-tuc?search=${encodeURIComponent(searchText.trim())}`);
+      navigate(`/tim-kiem?search=${encodeURIComponent(searchText.trim())}`);
     } else {
-      navigate("/tin-tuc");
+      navigate("/tim-kiem");
     }
   };
 
