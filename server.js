@@ -8,8 +8,8 @@ const distPath = path.join(__dirname, 'dist');
 
 app.use(express.static(distPath));
 
-// For SPA: serve index.html for all routes
-app.get('*', (req, res) => {
+// For SPA: serve index.html for all routes (Express v5+)
+app.use((req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
 
